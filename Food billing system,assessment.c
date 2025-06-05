@@ -3,7 +3,7 @@
 
 int main() {
     int choice, quantity, totalAmount = 0;
-    char moreOrders;
+    char moreorders;
 
     do {
         printf("\n --- Menu ---");
@@ -43,15 +43,15 @@ int main() {
         int amount = price * quantity;
         totalAmount += amount;
 
-        printf("Amount = %d\n", amount);
-        printf("%d\n Total Amount is = ", totalAmount);
+        printf("\n Amount = %d", amount);
+        printf("\n Total Amount is = %d", totalAmount);
 
-        printf("Do you want to place more orders? (y/n): ");
-        scanf(" %c", &moreOrders); 
+        printf("\n Do you want to place more orders? (y/n): ");
+        scanf(" %c", &moreorders); 
 
-    } while (moreOrders == 'y' || moreOrders == 'Y');
+    } while (moreorders == 'y' || moreorders == 'Y');
 
-    printf("%d\n Final Bill Amount = ", totalAmount);
+    printf("\n Final Bill Amount = %d", totalAmount);
     printf("\n Thank you for your order!");
 }
 
